@@ -75,12 +75,11 @@ namespace MyFolderProject.Controllers
                 if (newFolderName != String.Empty)
                 {
 
-                    // to rename directory
-                    Directory.Move(folderPath, newFolderPath);
+                    Directory.Move(folderPath, newFolderPath);   // to rename directory
 
-                    // checking directory has
-                    // been renamed or not
-                    if (Directory.Exists(newFolderPath))
+
+                    if (Directory.Exists(newFolderPath))         // checking if directory has been renamed or not
+
                     {
                         Console.WriteLine("The directory was renamed to " + newFolderName);
                     }
